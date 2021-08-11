@@ -2,6 +2,7 @@
 
 Technical exercise.
 
+<a href="https://javier-cuevas.github.io/credit-test/" >Live Previo: javier-cuevas.github.io/credit-test/</a>
 
 Project generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
