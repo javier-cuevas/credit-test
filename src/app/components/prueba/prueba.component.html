@@ -1,0 +1,47 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Test</a>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Table:</h5>
+              
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">No Document</th>
+                            <th scope="col">Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of users;">
+                            <th scope="row">{{ user?.id  | number }}</th>
+                            <td>{{ user?.email }}</td>
+                            <td>{{ user?.first_name }}</td>
+                            <td>{{ user?.last_name}}</td>
+                            <td>{{ user?.n_document  | number }}</td>
+                            <td>{{ user?.phone_number}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="copyright">
+           {{ year | date: "yyyy" }} Javier Cuevas
+        </div>
+    </div>
+</footer>
